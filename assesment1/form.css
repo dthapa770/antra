@@ -1,0 +1,95 @@
+.form-container {
+  position: fixed;
+  width: 100%;
+  max-width: 50rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: none;
+}
+
+.form-signup {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 1rem;
+}
+
+.form__terms {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 0.5fr 2.5fr;
+}
+
+.form__header {
+  text-align: center;
+}
+
+.form__header,
+.form__email,
+.form__mobile {
+  grid-column: 1/-1;
+}
+
+.form__header,
+.form__fname,
+.form__email,
+.form__mobile,
+.form__password,
+.form__register__button,
+.form__signin__button {
+  padding-left: 12px;
+}
+
+.text-field,
+.form__button {
+  height: 35px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.form__checkbox {
+  font-weight: bold;
+}
+
+.form_button_container {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.blue {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+.green {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.register-btn {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.conditions {
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  .form-signup {
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+
+  .form__header,
+  .form__fname,
+  .form__email,
+  .form__mobile,
+  .form__password,
+  .form__register__button,
+  .form__signin__button {
+    padding: 0;
+  }
+}

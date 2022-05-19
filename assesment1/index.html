@@ -4,55 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="form.css" />
     <link rel="stylesheet" href="style.css" />
     <title>HTML Assignment</title>
   </head>
   <body>
-    <form id="antra-form">
-      <div class="form-container">
-        <h1 id="heading">Sign Up</h1>
-        <div>
+    <section class="form-container">
+      <form action="" class="form-signup">
+        <div class="form__header">
+          <h1 id="heading">Sign Up</h1>
+        </div>
+        <div class="form__fname">
           <input type="text" class="text-field" placeholder="First Name" />
+        </div>
+        <div class="form__lname">
           <input class="text-field" type="text" placeholder="Last Name" />
         </div>
-        <div>
-          <input
-            class="text-field-single"
-            type="text"
-            placeholder="Mobile No."
-          />
+        <div class="form__mobile">
+          <input class="text-field" type="text" placeholder="Mobile No." />
         </div>
-        <div>
-          <input
-            class="text-field-single"
-            type="text"
-            placeholder="Email Address"
-          />
+        <div class="form__email">
+          <input class="text-field" type="text" placeholder="Email Address" />
         </div>
-        <div>
+        <div class="form__password">
           <input class="text-field" type="text" placeholder="Password" />
+        </div>
+        <div className="form__cpassword">
           <input
             class="text-field"
             type="text"
             placeholder="Confirm Password"
           />
         </div>
-        <div>
-          <label id="agree-text">
-            <input type="checkbox" class="checkbox" />I Agree</label
-          >
-          <label id="terms-conditions"
-            >By clicking <button id="agreement-register-btn">Register</button>,
-            you agree to the <span id="terms">Terms and Conditions</span> set
-            out by this site, including our cookie use</label
-          >
+        <div class="form__terms">
+          <div class="form__checkbox">
+            <label id="agree-text">
+              <input type="checkbox" class="checkbox" />I Agree</label
+            >
+          </div>
+          <div class="form__tc">
+            <label id="terms-conditions"
+              >By clicking <button class="register-btn">Register</button>, you
+              agree to the
+              <a href="#" class="conditions">Terms and Conditions</a> set out by
+              this site, including our cookie use</label
+            >
+          </div>
         </div>
-
-        <div>
-          <button id="register-btn">Register</button>
-          <button id="sign-in-btn">Sign In</button>
+        <div class="form_button_container">
+          <div class="form__register__button">
+            <button class="form__button blue">Register</button>
+          </div>
+          <div class="form__signin__button">
+            <button class="form__button green">Sign In</button>
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </section>
   </body>
 </html>
