@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav-bar-items {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#blog-title {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.container {
+  display: grid;
+  position: relative;
+  height: 100vh;
+  grid-template-columns: 1fr 0.3fr;
+  grid-template-rows: 0.1fr 0.2fr 0.4fr 0.5fr 0.09fr 0.1fr;
+  grid-template-areas:
+    "navbar navbar"
+    "main-blog-post about"
+    "main-blog-post archives"
+    "main-blog-post elsewhere"
+    "btn btn"
+    "footer footer";
+  grid-gap: 0.4em;
+}
+
+.main-blog-post {
+  grid-area: main-blog-post;
+  overflow: scroll;
+  margin-left: 0.8em;
+  list-style-position: inside;
+}
+.about {
+  grid-area: about;
+  background-color: #d3d3d3;
+  overflow: scroll;
+}
+
+.archives {
+  grid-area: archives;
+  overflow: scroll;
+  list-style: none;
+}
+.elsewhere {
+  grid-area: elsewhere;
+  overflow: scroll;
+  list-style: none;
+}
+.sidebar-headers {
+  font-style: italic;
+  font-weight: lighter;
+  padding-bottom: 4px;
+}
+.boxed {
+  border: 1px solid black;
+}
+.navbar {
+  grid-area: navbar;
+}
+.btn {
+  grid-area: btn;
+}
+.footer {
+  grid-area: footer;
+  background-color: #d3d3d3;
+  text-align: center;
+}
+
+p {
+  padding-bottom: 0.8em;
+}
+.meta-data {
+  padding-bottom: 0.8em;
+}
+.m-item {
+  opacity: 0.6;
+}
+
+a {
+  color: blue;
+}
+
+#nav-link {
+  color: black;
+  opacity: 0.5;
+}
+
+.btn-item {
+  border-radius: 12px;
+  height: 30px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.btn-item:hover {
+  border-color: blue;
+  color: blue;
+}

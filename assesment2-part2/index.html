@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog 2</title>
+  </head>
+  <body>
+  
+    <div class="container">
+        <nav class="navbar">
+            <div >
+                <ul class="nav-bar-items">
+                    <li><a id = "nav-link" href="">Subscribe</a></li>
+                    <li><h1 id="blog-title">Blog Title</h1></li>
+                    <li><span>&#128269</span></li>
+                </ul>
+              
+            </div>
+          </nav>
+          
+      <div class="main-blog-post">
+        <h1>CSS Grid Layout</h1>
+          <div class="meta-data">
+            <span class="m-item">May 21, 2022 by </span><a href="">MDN</a>
+          </div>
+        <article>
+          <p>
+              CSS Grid Layout excels at dividing a page into major regions or 
+              defining the relationship in terms of size, position, and layer, 
+              between parts of a control built from HTML primitives.
+          </p>  
+          <hr>     
+          <p>
+              Like tables, grid layout enables an author to align elements into columns and rows. 
+              However, many more layouts are either possible or easier with CSS grid 
+              than they were with tables. 
+          </p>       
+          <p class= "boxed">
+              For example, a grid container's child elements could position themselves 
+              so they actually overlap and layer, similar to CSS positioned elements.
+          </p>
+          <p>
+              Like tables, grid layout enables an author to align elements into columns and rows. 
+              However, many more layouts are either possible or easier with CSS grid 
+              than they were with tables. 
+          </p>
+        </article>
+        <h2>Grid Lines</h2>
+        <p>
+            Grid lines are created when you define tracks in the explicit grid using CSS Grid Layout.
+            Lines are also created in the implicit grid when implicit tracks are created to hold content positioned outside of the explicit grid, however these lines cannot be addressed by a number.
+        </p>
+        <h3>Placing items onto the grid by line number</h3>
+        <p>
+            Having created a grid, you can place items onto the grid by line number.
+        </p>
+        <pre class="boxed">
+           <code>
+              &ltdiv class="wrapper">
+              &ltdiv class="item">Item&lt/div>
+              &lt/div>
+           </code>
+        </pre>
+      <p>
+          Lines can be addressed using their line number.
+           In a left-to-right language such as English, column line 1 will be on the left of the grid, row line 1 on the top. 
+           Lines numbers respect the writing mode of the document and so in a right-to-left language for example. 
+      </p>
+      <h3>Naming lines</h3>
+      <p>
+          The lines created in the explicit grid can be named, by adding the name in square brackets before or after the track sizing information.
+          When placing an item, you can then use these names instead of the line number, as demonstrated below.The lines created in the explicit grid can be named, by adding the name in square brackets before or after the track sizing information.
+          When placing an item, you can then use these names instead of the line number, as demonstrated below.
+          <br>
+          <ul>
+            <li>You can define an explicit grid with grid layout.</li>
+            <li>You can create a grid with fixed track sizes – using pixels for example</li>
+            <li>More than one item can be placed into a grid cell or area and they can partially overlap each other.</li>
+          </ul>
+          <br>
+          <p>
+          Grid is a powerful specification that, when combined with other parts of CSS such as flexbox,
+          can help you create layouts that were previously impossible to build in CSS. 
+          </p>
+           <ol>
+             <li>Define an explicit grid with grid layout</li>
+             <li>Create a grid with fixed track sizes</li>
+             <li>item can be placed into a grid cell or area and they can partially overlap each other</li>
+           </ol>
+           <br>
+           We create a grid container by declaring display: grid or display: inline-grid on an element.
+           
+      </p>
+      </div>
+      <div class="about">
+          <h2 class="sidebar-headers">About</h2>
+          <p>
+              Grid lines are created when you define tracks in the explicit grid using CSS Grid Layout.
+              Lines are also created in the implicit grid when implicit tracks are 
+              created to hold content positioned outside of the explicit grid, however these lines cannot be addressed by a number.
+          </p>
+      </div> 
+      <div class="archives">
+          <h2 class="sidebar-headers">Archives</h2>
+          <ul>
+            <li><a href="">January 2021</a></li>
+            <li><a href="">February 2021</a></li>
+            <li><a href="">March 2021</a></li>
+            <li><a href="">April 2021</a></li>
+            <li><a href="">May 2021</a></li>
+            <li><a href="">June 2021</a></li>
+            <li><a href="">July 2021</a></li>
+            <li><a href="">August 2021</a></li>
+            <li><a href="">September 2021</a></li>
+            <li><a href="">October 2021</a></li>
+            <li><a href="">November 2021</a></li>
+            <li><a href="">December 2021</a></li>
+          </ul>
+      </div> 
+      <div class="elsewhere">
+          <h2 class="sidebar-headers">Elsewhere</h2>
+          <ul>
+            <li><a href="">Github</a></li>
+            <li><a href="">LinkedIn</a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
+      </div>
+ 
+      <div class="btn">
+          <input class ="btn-item" type="button" value="Older Post"></input>
+          <input class ="btn-item" type="button" value="Newer Post"></input>
+        </div>
+    <div class="footer">
+      <footer>
+        <span>Blog Template build for <a href="">Antra</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
