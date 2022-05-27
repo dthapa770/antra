@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.search-bar__button {
+  background: #000000d0;
+  margin: 0.5em;
+  border-radius: 50%;
+  color: white;
+  height: 3.5em;
+  width: 3.5em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar__input {
+  background: #000000d0;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+  border-radius: 18px;
+  font-family: inherit;
+  font-size: 120%;
+}
+
+.search-bar__button:hover {
+  background: black;
+  transition: 0.3s ease-in-out;
+}
+
+.search-bar__input:hover {
+  background: black;
+  transition: 0.3s ease-in-out;
+}
+
+.message-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+  color: black;
+  /* background: #000000d0; */
+}
+
+.album_container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  background: #000000d0;
+  color: ivory;
+}
+
+.album-card {
+  height: 300px;
+  width: 300px;
+  border: ivory;
+  border-style: groove;
+  border-radius: 10px;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.album-card:hover {
+  background: black;
+  transition: 0.5s ease-in-out;
+}
+/* .album-info{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+} */
+.album__title {
+  font-size: 1em;
+  padding-left: 15px;
+}
+.album__name {
+  width: inherit;
+}
+
+img {
+  width: 250px;
+  margin: 5px;
+  padding-left: 15px;
+}
+
+.load-button {
+  width: 100px;
+  height: 50px;
+  z-index: 3;
+}
+#loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
